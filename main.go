@@ -69,7 +69,7 @@ func main() {
 		sC := make(nbt.Compound)
 		sC["servers"] = addServers
 
-		fileW, ok := os.OpenFile(*serverDat, os.O_RDONLY|os.O_CREATE, 0666)
+		fileW, ok := os.OpenFile(*serverDat, os.O_RDWR|os.O_CREATE, 0644)
 		if ok != nil {
 			fmt.Println(ok)
 			os.Exit(1)
@@ -137,7 +137,7 @@ func main() {
 		}
 		if *list {
 			t.SetStyle(table.StyleLight)
-			t.RenderMarkdown()
+			t.Render()
 		}
 		if *export {
 			ok := ioutil.WriteFile(*listPtr, []byte(o), 0644)
