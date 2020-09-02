@@ -1,10 +1,10 @@
-#go-serversdat
+# go-serversdat
 This projects aims to make managing a large servers.dat file easier by providing a server list in tsv format.
 
 
-##Example Usage
+## Example Usage
 Example `servers.dat` and `server-list.txt` can be found in the [examples](examples) directory.
-####List servers:
+#### List servers:
 ```
 > serversdat -l
 ┌───┬────────────────────┬────────────────────────┐
@@ -16,13 +16,13 @@ Example `servers.dat` and `server-list.txt` can be found in the [examples](examp
 └───┴────────────────────┴────────────────────────┘
 ```
 
-####Update servers:
+#### Update servers:
 ```
 > serversdat -u
 Updated servers.dat
 ```
 
-####Export servers:
+#### Export servers:
 ```
 > serversdat -e
 ```
@@ -34,7 +34,7 @@ Development Server	dev.myminecraft.server
 Minecraft Server	play.minecraft.server
 ```
 
-####Arguments:
+#### Arguments:
 ```
   -e    Alias for -export
   -export
@@ -56,7 +56,7 @@ Minecraft Server	play.minecraft.server
 
 ```
 
-##To Do
+## To Do
 - Consider using a JSON format for the exported list and list used to update.
 - Handle some more potential errors
 - Refactor into more manageable functions
