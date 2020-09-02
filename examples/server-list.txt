@@ -1,0 +1,3 @@
+Local Test	localhost
+Development Server	dev.myminecraft.server
+Minecraft Server	play.minecraft.server
